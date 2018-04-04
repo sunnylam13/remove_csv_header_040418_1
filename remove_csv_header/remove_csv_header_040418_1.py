@@ -23,6 +23,16 @@ for csvFilename in os.listdir('.'):
 	print('Removing header from ' + csvFilename + ' ...')
 
 	# read the CSV file in (skipping first row)
+	csvRows = []
+	csvFileObj = open(csvFilename)
+	readerObj = csv.reader(csvFileObj)
+
+	for row in readerObj:
+		if readerObj.line_num == 1:
+			continue # skip first row
+		csvRows.append(row)
+
+	csvFilename.close()
 	
 	# write out CSV file
 
