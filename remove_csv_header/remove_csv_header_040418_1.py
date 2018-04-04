@@ -35,4 +35,10 @@ for csvFilename in os.listdir('.'):
 	csvFilename.close()
 	
 	# write out CSV file
+	csvFileObj = open( os.path.join('headerRemoved',csvFilename),'w',newline='' )
+	csvWriter = csv.writer(csvFileObj)
+
+	for row in csvRows:
+		csvWriter.writerow(row)
+	csvFileObj.close()
 
