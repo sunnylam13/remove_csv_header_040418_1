@@ -20,3 +20,17 @@ code level
 
 * create CSV `Writer` object and write out the read data to new file
 
+## Wednesday, April 4, 2018 9:53 AM
+
+Ideas for similar programs
+
+similar to Excel file programs
+
+* compare data between different rows in a CSV or between many CSVs
+
+* copy specific data from CSV to Excel or reverse
+
+* check for bad data or formatting errors, then alert
+
+* read data from CSV as input for Python programs
+
