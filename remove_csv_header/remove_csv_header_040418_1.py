@@ -32,7 +32,7 @@ for csvFilename in os.listdir('.'):
 			continue # skip first row
 		csvRows.append(row)
 
-	csvFilename.close()
+	csvFileObj.close()
 	
 	# write out CSV file
 	csvFileObj = open( os.path.join('headerRemoved',csvFilename),'w',newline='' )
